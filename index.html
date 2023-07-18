@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>resgistration form</h1>
+  <p>Please fill out this form with the required information</p>
+
+  <!-----form----->
+<form method="post"  action="https://script.google.com/macros/s/AKfycby0VVjk1roq9Rl66cwEq3wPmcpXFn_1Mm1Spt6bJqGdfNwvHsL_R6_TIfUP4efL2WxzxQ/exec" >
+  
+<fieldset>
+    <label for="first-name">enter your first name: <input id="first-name" type="text" name="first-name" required/></label> 
+    <label for="last-name" >enter your last name: <input id="last-name" type="text" name="last-name"  required/></label> 
+    <label for="email" > enter your email address: <input id="email" type="email"  name="email" required/></label> 
+    <label for="new-password" >enter your password: <input id="new-password"  type="password" pattern="[a-z0-5]{8,}"  name="new-password" required/></label> 
+
+</fieldset>
+
+<fieldset>
+  <label for="account"><input class="inline"  id="account" type="radio" required name="account-type" required/>business account</label>
+  <label for="account1"><input class="inline"  id="account1" type="radio" required name="account-type" required/>personal account</label>
+  <label for="agree"><input class="inline"  id="agree" type="checkbox" required  name="agreement" required/>i agree to all <a href=" #">terms and conditions</a></label>
+</fieldset>
+
+<fieldset>
+  
+    <label>upload a profile picture  <input type="file" name="picture" required/></label>
+    <label>Input your age (years): <input type="number" required/></label>
+    <label>How did you hear about us? 
+       <select>
+        <option value="" name="option" required>(select one)</option>
+          <option value="1">freeCodeCamp News</option>          
+          <option value="2"> freeCodeCamp YouTube Channel</option>      
+          <option value="3"> freeCodeCamp Forum</option>     
+          <option value="4">  others</option> 
+          </select>
+    <label for="referrer " > Provide a bio :  <textarea id="referrer" placeholder="i love coding on the beech...." rows="3" cols="30" name="bio" required></textarea> </label>
+</fieldset>
+
+<input class="submit" type="Submit"/>
+
+</form>
+
+</body>
+</html>
